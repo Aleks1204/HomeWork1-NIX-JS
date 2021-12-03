@@ -61,7 +61,7 @@ console.log (res - a);
 // координат, то вывести 0. Если точка не совпадает с начало координат, но лежит на оси
 // OX или OY, то вывести соответственно 1 или 2. Если точка не лежит на координатных
 // осях, то вывести 3.
-butt = function() {
+function butt() {
 let X = document.querySelector('#x').value
 let Y = document.querySelector('#y').value
 let result = document.querySelector('#result')
@@ -225,7 +225,7 @@ for (let i = 2; i <= finish; i++) {
 
 // Задание №17.
 // Вычислить среднее арифметическое 2-ух чисел, введенных пользователем.
-middle = function(){
+function middle(){
 let first = parseInt(document.querySelector('#first').value)
 let second = parseInt(document.querySelector('#second').value)
 let result2 = document.querySelector('#result2')
@@ -234,7 +234,7 @@ result2.innerHTML += ((first + second)/2);
 
 // Задание №18.
 // Напишите скрипт, который вычислит квадрат любого введённого числа.
-square = function(){
+function square(){
     let squ = document.querySelector('#squ').value;
     let result3 = document.querySelector('#result3')
     result3.innerHTML += squ ** 2;
@@ -243,7 +243,7 @@ square = function(){
 // Задание №19.
 // Примите от пользователя 3 числа. Выведите на экран разницу большего и меньшего из
 // них.
-minus = function(){
+function minus(){
     let first1 = document.querySelector('#first1').value;
     let second1 = document.querySelector('#second1').value;
     let third1 = document.querySelector('#third1').value;
@@ -255,7 +255,7 @@ minus = function(){
 
 // Задание №20.
 // Напишите программу, проверяющую число, введенное с клавиатуры на четность.
-evenFun = function(){
+function evenFun(){
     let even = document.querySelector('#even').value;
     let result5 = document.querySelector('#result5');
     if(even%2 == 0){
@@ -282,7 +282,7 @@ console.log(Math.trunc(sum));
 // Задание №22.
 // Известно, что 1 дюйм равен 2.54 см. Разработать скрипт, переводящий дюймы в
 // сантиметры и наоборот. Диалог с пользователем реализовать через браузер
-conversFun = function(){
+function conversFun(){
 let val = document.querySelector('input[name="select"]:checked').value
 let convers = document.querySelector('#convers').value;
 let result6 = document.querySelector('#result6')
@@ -296,6 +296,21 @@ if(val == 1){
 result6.innerHTML = convers;
 }
 //  К сожалению не хватило времени.....
-//  стоит ли продолжать после дедлайна?
+//  стоит ли продолжать после дедлайна???
 
+// Задание №23. Найти сумму или произведение цифр трехзначного числа
+// Пользователь вводит через prompt трёхзначное число. Проверить трехзначное число
+// на четность и найти сумму его цифр, если число четное, или произведение его цифр,
+// если число нечетное.
+var sign = prompt("введите трёхзначное число");
+let as = parseInt(sign[0])
+let bs = parseInt(sign[1])
+let cs = parseInt(sign[2])
+if(sign%2 == 0){
+    console.log(as + bs + cs)
+}else{
+    console.log(as * bs * cs)
+}
+
+///////////////////////////////
 
